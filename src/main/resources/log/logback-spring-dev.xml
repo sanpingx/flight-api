@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <property name="log.home" value="/flightapi/log/dev"/>
+    <include resource="log/logback-spring-comm.xml"/>
+
+    <!-- 输出sql日志到控制台-->
+    <logger name="cn.spx.flightapi.mapper" level="DEBUG"/>
+
+</configuration>

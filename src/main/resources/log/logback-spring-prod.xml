@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <property name="log.home" value="/flightapi/log/prod"/>
+    <include resource="log/logback-spring-comm.xml"/>
+
+</configuration>

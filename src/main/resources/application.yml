@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: flightapi
+
+  profiles:
+    active: dev
+#  security:
+#    user:
+#      password:
+#        encoding:
+#          enabled: true
+
+
+#-------------------------------------------------
+# mybatis configuration
+#-------------------------------------------------
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+--- #################### 接口文档配置 ####################
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui
+    username: admin
+    password: admin
+  default-flat-param-object: true
+
+knife4j:
+  enable: false
+  setting:
+    language: zh_cn
+
+flightapi:
+  info:
+    version: 1.0.0
+  web:
+    admin-ui:
+      url: http://dashboard.cn # Admin 管理后台 UI 的地址
